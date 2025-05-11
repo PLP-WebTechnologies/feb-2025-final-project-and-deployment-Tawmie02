@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.btn, .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover, .button:hover {
+    background-color: #0056b3;
+}
+
+/* Header Styles */
+.site-header, .blog-header, .about-header, .contact-header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.site-header h1, .blog-header h1, .about-header h1, .contact-header h1 {
+    margin-bottom: 5px;
+}
+
+.site-header .site-description {
+    font-style: italic;
+    color: #ddd;
+}
+/* Navigation Styles */
+.main-navigation {
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.main-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.main-navigation ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.main-navigation ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-navigation ul li a:hover, .main-navigation ul li a.active {
+    color: #007bff;
+}
+
+/* Home Page Styles */
+.home-content .latest-posts {
+    margin-bottom: 30px;
+}
+
+.home-content .latest-posts h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.home-content .post-summary {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.home-content .post-summary h3 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.home-content .post-summary h3 a:hover {
+    color: #007bff;
+}
+
+
+
+/* Blog Page Styles */
+.blog-content .filter-section {
+    background-color: #f9f9f9;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.blog-content .filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-content .filter-container .search-bar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.blog-content .filter-container .search-bar button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.blog-content .filter-container .search-bar button:hover {
+    background-color: #0056b3;
+}
+
+.blog-content .filter-container .categories button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.blog-content .filter-container .categories button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.blog-content .filter-container .categories button:hover {
+    background-color: #eee;
+}
+
+
+
+.post-content .post .comments-section form input[type="text"],
+.post-content .post .comments-section form input[type="email"],
+.post-content .post .comments-section form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+/* Contact Page Styles */
+.contact-page-content .contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;        
+}

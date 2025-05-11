@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog - Exploring Ideas Together</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> </head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Welcome to My Blog</h1>
+            <p class="site-description">Exploring ideas, sharing thoughts, and diving into great conversations!</p>
+            <img src="images/pexels-ahmetyuksek-31960526.jpg" alt="" width="100" height="100">
+        </div>
+    </header>
+
+    <nav class="main-navigation">
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                 <li><a href="post.html">Post</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+           
+            </ul>
+        </div>
+    </nav>
+
+    <main class="home-content">
+        <section class="latest-posts">
+            <div class="container">
+                <h2>Latest Articles</h2>
+                <article class="post-summary">
+                    <h3><a href="post1.html">The Beauty of Simplicity in Design</a></h3>
+                    <p class="post-meta">Published on May 10, 2025 by John Doe</p>
+                    <p>A brief exploration of minimalist design principles and their impact on user experience...</p>
+                    <a href="post1.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="post-summary">
+                    <h3><a href="post2.html">My Adventures in Kenyan Coffee Farming</a></h3>
+                    <p class="post-meta">Published on May 5, 2025 by Jane Smith</p>
+                    <p>An inside look at the journey from bean to cup in the highlands of Kenya...</p>
+                    <a href="post2.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <div>
+                    <button>
+                    <a href="#" class="older-posts">&laquo; Older Posts</a></button>
+                  <button> <a href="#" class="newer-posts">Newer Posts &raquo;</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-posts">
+            <div class="container">
+                <h2>Featured Posts</h2>
+                <div class="posts-grid" id="posts-container">
+                    </div>
+                <button id="load-more" class="button">Load More</button>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest posts and exclusive content delivered right to your inbox.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="button">Subscribe</button>
+                </form>
+                <div id="form-message" class="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 My Blog. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#" ><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#" ><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#" ><i class="fab fa-instagram"></i> Instagram</a></li>
+               
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
